@@ -1,17 +1,21 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .bannerBase{
     width: 100%;
     height: 70vh;
-    position:relative;
     z-index: -1;
 }
 
 .bannerColor{
     height: 100%;
-   background-image: url('/banner.gif');
+    background-image: url('/banner.gif');
     background-size: cover;
-   display: flex;
-    z-index: -1;
+    display: flex;
     overflow: hidden;
+
 }
 
 .perfil{
@@ -19,6 +23,7 @@
     overflow-y: hidden;
     min-width: 60vh;
     min-height: 20vh;
+
    
 }
 
@@ -29,6 +34,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .title{
@@ -36,9 +42,8 @@
     font-weight:bolder;
     color: white;
     align-self: center;
-    margin-left: 10%;
-
-
+    margin-left: 7%;
+    margin-right: 2%;
 }
 
 .subtitle{
@@ -82,6 +87,7 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .button{
@@ -93,10 +99,32 @@
     border-color: white;
     background: linear-gradient(90deg, rgb(52, 9, 63) 0%, rgba(68, 24, 56, 0.676) 35%, rgb(136, 29, 109) 100%);
     color: white;
+    transition: 1s;
+    position: relative;
 }
+
 
 .button:hover{
     cursor: pointer;
+    background-image: linear-gradient(90deg, rgb(198, 133, 252) 0%, rgba(153, 20, 118, 0.676) 35%, rgb(247, 101, 210) 100%);
+
+    
+}
+
+.icons{
+    height: 32px;
+    width: 32px;
+    margin: 10px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+
+    
+}
+
+.icons:hover{
+    fill: white;
+    height: 38px;
+    width: 38px;
 }
 
 @keyframes grow{
@@ -104,6 +132,8 @@
         opacity: 50%;
     }
 }
+
+
 
 
 @media screen and (max-width:1000px){
@@ -142,6 +172,11 @@
 
     .subtitle{
         font-size: 25px;
+    }
+
+    .button{
+        width: 30vh;
+        height: 3vh;
     }
     
 }
