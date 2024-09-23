@@ -1,0 +1,10 @@
+#root, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh !important;
+  font-family: "Public Sans", sans-serif;
+}
+
+html {
+  height: 100% !important;
+}
