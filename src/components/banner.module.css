@@ -5,7 +5,7 @@ a{
 
 .bannerBase{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     z-index: -1;
 }
 
@@ -60,6 +60,7 @@ a{
 .box{
     padding: 2px;
     transition: 05s;
+    text-decoration: underline;
     animation: grow .8s infinite alternate ;
 
 }
@@ -75,7 +76,7 @@ a{
 }
 
 .boxBlue{
-    color: rgb(100, 165, 240);
+    color: rgb(20, 94, 179);
   
 } 
 
@@ -86,18 +87,19 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 
 }
 
 .button{
-    vertical-align: center;
-    width: 40vh;
-    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 20vh;
     margin: 10px;
-    border-radius: 40px;
+    border-radius: 10px;
     border-color: white;
-    background: linear-gradient(90deg, rgb(52, 9, 63) 0%, rgba(68, 24, 56, 0.676) 35%, rgb(136, 29, 109) 100%);
+    background-color: rgb(160, 20, 160);
     color: white;
     transition: 1s;
     position: relative;
@@ -112,8 +114,8 @@ a{
 }
 
 .icons{
-    height: 32px;
-    width: 32px;
+    height: 60px;
+    width: 60px;
     margin: 10px;
     text-decoration: none;
     transition: .2s ease-in-out;
@@ -123,8 +125,13 @@ a{
 
 .icons:hover{
     fill: white;
-    height: 38px;
-    width: 38px;
+    
+}
+
+.email{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 @keyframes grow{
@@ -136,7 +143,7 @@ a{
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:800px){
 
     .perfil{
         display: none;
@@ -161,23 +168,16 @@ a{
         font-size: 25px;
     }
     
-}
-
-@media screen and (max-width:800px){
-
-   .title{
-    font-size: 50px;
-   }
-
-
-    .subtitle{
-        font-size: 25px;
-    }
-
-    .button{
-        width: 30vh;
-        height: 3vh;
-    }
+    .title{
+        font-size: 50px;
+       }
+    
+    
+        .subtitle{
+            font-size: 25px;
+        }
+    
     
 }
+
 

@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.flexRow{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    row-gap: 2;
+}
+
+.card{
+    background-position: center;
+    background-size: cover;
+    border-radius: 2%;
+    width: 50vh;
+    height: 30vh;
+    padding: 10px;
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.name{
+    text-align: center;
+    font-size: 10px;
+    color: black;
+}
+
+.description{
+    font-size: 18px;
+}
