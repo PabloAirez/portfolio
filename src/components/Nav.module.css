@@ -5,7 +5,9 @@
     background-color: rgba(0, 0, 0, 0);
     position: fixed;
     z-index: 1;
+
 }
+
 
 .list{
     display: flex;
@@ -16,6 +18,53 @@
     color: white;
 }
 
+.listInMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    list-style-type: none;
+    color: white;
+
+
+}
+
 li{
     margin-right: 15px;
+}
+
+.menuMobile{
+    height: 30px;
+    width: 30px;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+}
+
+.flexCol li{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.closed{
+    max-height: 0px;
+    overflow: hidden;
+
+}
+
+.opened{
+    max-height: 100%;
+    margin-top: 11px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.opened li{
+width: 100vw;
+margin: 5px;
 }
