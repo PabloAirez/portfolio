@@ -17,7 +17,7 @@ const Nav = () => {
         if(window.scrollY > 0){
             navRef.current.style.backgroundColor = "rgba(0,0,0,0.8)";
         }else{
-            navRef.current.style.backgroundColor = menuIsOpen ? "rgba(0,0,0,0)";
+            navRef.current.style.backgroundColor = "rgba(0,0,0,0)"
 
         }
     })
