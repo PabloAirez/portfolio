@@ -17,7 +17,12 @@ const Nav = () => {
         if(window.scrollY > 0){
             navRef.current.style.backgroundColor = "rgba(0,0,0,0.8)";
         }else{
-            navRef.current.style.backgroundColor = "rgba(0,0,0,0)"
+            if(!menuIsOpen){
+                navRef.current.style.backgroundColor = "rgba(0,0,0,0)"
+            }else{
+                navRef.current.style.backgroundColor = "rgba(0,0,0,0.8)";
+            }
+            
 
         }
     })
@@ -33,11 +38,10 @@ const Nav = () => {
     useEffect(()=>{
         if(menuIsOpen){
             navRef.current.style.backgroundColor = "rgba(0,0,0,0.8)";
-        }else{
-            navRef.current.style.backgroundColor = "rgba(0,0,0,0)";
-
         }
-    },[menuIsOpen]);
+    },[menuIsOpen])
+
+    
 
   return (
     <div className={Styles.nav} ref={navRef}>

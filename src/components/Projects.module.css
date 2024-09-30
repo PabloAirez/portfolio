@@ -6,6 +6,13 @@
     margin: 60px;
 }
 
+.title{
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+
 .flexRow{
     display: flex;
     justify-content: center;

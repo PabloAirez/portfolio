@@ -36,6 +36,7 @@ li{
 .menuMobile{
     height: 30px;
     width: 30px;
+    margin-right: 10px!important;
 }
 
 .flexCol{
@@ -58,7 +59,7 @@ li{
 }
 
 .opened{
-    max-height: 100%;
+    max-height: 100vh;
     margin-top: 11px;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.8);

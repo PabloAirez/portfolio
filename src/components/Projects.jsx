@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./Projects.module.css";
+import Styles from "./Projects.module.css";
 import siteInstitucional from "/projeto-site.jpg"
 
 const Projects = () => {
@@ -11,12 +11,13 @@ const Projects = () => {
         }
     ];
   return (
-    <div className={styles.container}>
-        <div className={styles.flexRow}>
+    <div className={Styles.container}>
+      <p className={Styles.title}>Conheça meus projetos</p>
+        <div className={Styles.flexRow}>
         {projects.map((project, index)=>(
                <a href={project.link} target='_blank'>
-                    <div className={styles.card} style={{backgroundImage:`url(${project.image})`}}>
-                        <p className={styles.name}>{project.name}</p>
+                    <div className={Styles.card} style={{backgroundImage:`url(${project.image})`}}>
+                        <p className={Styles.name}>{project.name}</p>
                     </div>
                 </a>
         ))}
