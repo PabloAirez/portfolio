@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   height: 100vh !important;
+  width: 100vw;
   font-family: "Public Sans", sans-serif;
   background-color: #252424;
 }
