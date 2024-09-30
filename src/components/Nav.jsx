@@ -49,7 +49,7 @@ const Nav = () => {
             {
                 isMobile ? (
                     <>
-                    <li onClick={()=>setMenuIsOpen((prev)=>!prev)}>{menuIsOpen ? <IoCloseSharp className={Styles.menuMobile}/> : <TiThMenu className={Styles.menuMobile}/>}</li>  
+                    <li className={Styles.liMenu} onClick={()=>setMenuIsOpen((prev)=>!prev)}>{menuIsOpen ? <IoCloseSharp className={Styles.menuMobile}/> : <TiThMenu className={Styles.menuMobile}/>}</li>  
                     <div className={`${Styles.flexCol} ${menuIsOpen ? (Styles.opened) : (Styles.closed)}`}>
                         <li className={Styles.li}>Meus Projetos</li>
                         <li className={Styles.li}>Sobre Mim</li>
